@@ -6,7 +6,7 @@ import gestion.Zona;
 
 public class Anfibio extends Animal {
 	
-	private static ArrayList<Anfibio> listado;
+	private static ArrayList<Anfibio> listado = new ArrayList<>();
 	public static int ranas = 0;
 	public static int salamandras = 0;
 	private String colorPiel;
