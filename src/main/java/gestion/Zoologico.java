@@ -1,5 +1,4 @@
 package gestion;
-import zooAnimales.Animal;
 import java.util.ArrayList;
 
 public class Zoologico {
@@ -45,8 +44,12 @@ public class Zoologico {
 		zonas.add(zona);
 	}
 	
-	public int cantidadTotalAnimales(Animal animal) {
-		return animal.getTotalAnimales();		
+	public int cantidadTotalAnimales() {
+		int cantanimal = 0;
+		for (Zona zona : zonas) {
+			cantanimal += zona.cantidadAnimales();
+		}
+		return cantanimal;
 	}
 	
 }
