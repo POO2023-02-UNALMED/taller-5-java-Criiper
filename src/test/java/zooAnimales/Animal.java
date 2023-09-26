@@ -18,6 +18,7 @@ public class Animal {
 	}
 	
 	public Animal() {
+		totalAnimales++;
 	}
 	
 
@@ -62,7 +63,7 @@ public class Animal {
 	
 	
 	public int getTotalAnimales() {
-		return Animal.totalAnimales;
+		return totalAnimales;
 	}
 	
 	public String movimiento() {
