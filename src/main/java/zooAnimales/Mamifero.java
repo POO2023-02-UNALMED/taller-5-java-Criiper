@@ -19,6 +19,8 @@ public class Mamifero extends Animal {
 	}
 	
 	public Mamifero() {
+		listado.add(this);
+
 	}
 	
 	public static void setListado(ArrayList<Mamifero> listado) {
