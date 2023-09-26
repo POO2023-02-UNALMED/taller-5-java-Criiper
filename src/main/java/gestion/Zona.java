@@ -41,7 +41,7 @@ public class Zona {
 		animales.add(animal);
 	}
 	
-	public static int cantidadAnimales() {
+	public int cantidadAnimales() {
 		return animales.size();
 	}
 }
