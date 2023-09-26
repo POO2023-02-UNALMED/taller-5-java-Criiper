@@ -69,9 +69,8 @@ public class Animal {
 		return "desplazarse";
 	}
 	
-	public static String totalPorTipo(Zona zona){
-		return	"Mamiferos: " + Mamifero.cantidadMamiferos() + "\\nAves: " + Ave.cantidadAves() + "\nReptiles: " + Reptil.cantidadReptiles() + "\nPeces: " + Pez.cantidadPeces() + "\nAnfibios: " + Anfibio.cantidadAnfibios() + "\n" + zona.cantidadAnimales() + " es el numero de animales por cada subclase.";
-				
+	public static String totalPorTipo(){
+		return	"Mamiferos: " + Mamifero.cantidadMamiferos() + "\\nAves: " + Ave.cantidadAves() + "\nReptiles: " + Reptil.cantidadReptiles() + "\nPeces: " + Pez.cantidadPeces() + "\nAnfibios: " + Anfibio.cantidadAnfibios();	
 	}
 	
 	public String toString() {
