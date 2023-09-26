@@ -7,8 +7,8 @@ import gestion.Zona;
 public class Ave extends Animal {
 	
 	private static ArrayList<Ave> listado = new ArrayList<>();
-	public static int halcones = 0;
-	public static int aguilas = 0;
+	public static int halcones;
+	public static int aguilas;
 	private String colorPlumas;
 	
 	public Ave(String nombre, int edad, String habitat, String genero, String colorPlumas) {
