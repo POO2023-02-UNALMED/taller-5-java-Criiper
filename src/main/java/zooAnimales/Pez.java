@@ -6,11 +6,11 @@ import gestion.Zona;
 
 public class Pez extends Animal {
 	
-	public	static ArrayList<Pez> listado;
+	private	static ArrayList<Pez> listado;
 	public static int salmones = 0;
 	public static int bacalaos = 0;
-	public String colorEscamas;
-	public int cantidadAletas;
+	private String colorEscamas;
+	private int cantidadAletas;
 	
 	public Pez(String nombre, int edad, String habitat, String genero, String colorEscamas, int cantidadAletas) {
 		super(nombre, edad, habitat, genero);

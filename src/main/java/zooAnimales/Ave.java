@@ -6,10 +6,10 @@ import gestion.Zona;
 
 public class Ave extends Animal {
 	
-	public static ArrayList<Ave> listado;
+	private static ArrayList<Ave> listado;
 	public static int halcones = 0;
 	public static int aguilas = 0;
-	public String colorPlumas;
+	private String colorPlumas;
 	
 	public Ave(String nombre, int edad, String habitat, String genero, String colorPlumas) {
 		super(nombre, edad, habitat, genero);

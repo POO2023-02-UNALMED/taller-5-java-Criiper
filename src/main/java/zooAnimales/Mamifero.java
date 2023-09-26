@@ -5,11 +5,11 @@ import java.util.ArrayList;
 import gestion.Zona;
 
 public class Mamifero extends Animal {
-	public static ArrayList<Mamifero> listado;
+	private static ArrayList<Mamifero> listado;
 	public static int caballos = 0;
 	public static int leones = 0;
-	public boolean pelaje;
-	public int patas;
+	private boolean pelaje;
+	private int patas;
 	
 	public Mamifero(String nombre, int edad, String habitat, String genero, boolean pelaje, int patas) {
 		super(nombre, edad, habitat, genero);

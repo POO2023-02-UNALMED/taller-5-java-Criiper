@@ -6,11 +6,11 @@ import gestion.Zona;
 
 public class Anfibio extends Animal {
 	
-	public static ArrayList<Anfibio> listado;
+	private static ArrayList<Anfibio> listado;
 	public static int ranas = 0;
 	public static int salamandras = 0;
-	public String colorPiel;
-	public boolean venenoso;
+	private String colorPiel;
+	private boolean venenoso;
 	
 	public Anfibio(String nombre, int edad, String habitat, String genero, String colorPiel, boolean venenoso) {
 		super(nombre, edad, habitat, genero);

@@ -5,11 +5,11 @@ import java.util.ArrayList;
 import gestion.Zona;
 
 public class Reptil extends Animal {
-	public static ArrayList<Reptil> listado;
+	private static ArrayList<Reptil> listado;
 	public static int iguanas = 0;
 	public static int serpientes = 0;
-	public String colorEscamas;
-	public int largoColas;
+	private String colorEscamas;
+	private int largoColas;
 	
 	public Reptil(String nombre, int edad, String habitat, String genero, String colorEscamas, int largoColas) {
 		super(nombre, edad, habitat, genero);
