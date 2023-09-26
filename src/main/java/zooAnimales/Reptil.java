@@ -53,10 +53,10 @@ public class Reptil extends Animal {
 	}
 	
 
-	public void setLargoColas(int largoColas) {
+	public void setLargoCola(int largoColas) {
 		this.largoColas = largoColas;
 	}
-	public int getLargoColas(){
+	public int getLargoCola(){
 		return this.largoColas;
 	}
 
