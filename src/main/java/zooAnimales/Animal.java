@@ -4,12 +4,12 @@ import java.util.ArrayList;
 
 public class Animal {
 	
-	private int totalAnimales;
+	private static int totalAnimales;
 	private String nombre;
 	private int edad;
 	private String habitat;
 	private String genero;
-	private ArrayList<Zona> zona;
+	private Zona zona;
 	
 	public Animal(String nombre, int edad, String habitat, String genero){
 		this.nombre = nombre;
@@ -53,17 +53,17 @@ public class Animal {
 		return this.genero;
 	} 
 
-	public void setZona(ArrayList<Zona> zona) {
+	public void setZona(Zona zona) {
 		this.zona = zona;
 	}
-	public ArrayList<Zona> getZona(){
+	public Zona getZona(){
 		return this.zona;
 	} 
 	
 	
 	
 	public int getTotalAnimales() {
-		return this.totalAnimales;
+		return Animal.totalAnimales;
 	}
 	
 	public String movimiento() {
@@ -76,8 +76,8 @@ public class Animal {
 	}
 	
 	public String toString() {
-		if(this.zona.size() != 0) {
-		return "Mi nombre es " + nombre + ", tengo una edad de " + edad + ", habito en " + habitat + " y mi genero es " + genero + ", la zona en la que me ubico es " + this.zona.get(0) + ", en el " + this.zona.get(0).getZoo();
+		if(this.zona != null) {
+		return "Mi nombre es " + nombre + ", tengo una edad de " + edad + ", habito en " + habitat + " y mi genero es " + genero + ", la zona en la que me ubico es " + this.zona + ", en el " + this.zona.getZoo();
 		}
 		else {
 		return	"Mi nombre es " + nombre + ", tengo una edad de " + edad + ", habito en " + habitat + " y mi genero es " + genero;	
