@@ -1,6 +1,5 @@
 package zooAnimales;
 import gestion.*;
-import java.util.ArrayList;
 
 public class Animal {
 	
@@ -25,7 +24,7 @@ public class Animal {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-	public String getnombre(){
+	public String getNombre(){
 		return this.nombre;
 	}
 	
@@ -70,8 +69,8 @@ public class Animal {
 		return "desplazarse";
 	}
 	
-	public String totalPorTipo(){
-		return	"Mamiferos: " + Mamifero.cantidadMamiferos() + "\\nAves: " + Ave.cantidadAves() + "\nReptiles: " + Reptil.cantidadReptiles() + "\nPeces: " + Pez.cantidadPeces() + "\nAnfibios: " + Anfibio.cantidadAnfibios() + "\n" + getTotalAnimales() + " es el numero de animales por cada subclase.";
+	public static String totalPorTipo(Zona zona){
+		return	"Mamiferos: " + Mamifero.cantidadMamiferos() + "\\nAves: " + Ave.cantidadAves() + "\nReptiles: " + Reptil.cantidadReptiles() + "\nPeces: " + Pez.cantidadPeces() + "\nAnfibios: " + Anfibio.cantidadAnfibios() + "\n" + zona.cantidadAnimales() + " es el numero de animales por cada subclase.";
 				
 	}
 	
